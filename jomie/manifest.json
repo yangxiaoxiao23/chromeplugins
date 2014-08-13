@@ -1,0 +1,23 @@
+{
+  "manifest_version": 2,
+
+  "name": "粥米的签证插件",
+  "description": "Jomie",
+  "version": "1.0", 
+   "content_scripts": [ { 
+      "js": ["jquery.js", "bg.js" ], 
+      "matches": [ "https://*.state.gov/*", "http://*.baidu.com/*", "http://*.state.gov/*", "http://travel.state.gov/content/travel/english.html"], 
+      "run_at": "document_end" 
+   } ],
+
+  "permissions": [
+	"tabs",
+    "https://secure.flickr.com/",
+	"http://travel.state.gov/content/travel/english.html",
+	"https://ceac.state.gov/*"
+  ],
+  "browser_action": {
+    "default_icon": "jomie.png",
+    "default_popup": "popup.html"
+  }
+}
