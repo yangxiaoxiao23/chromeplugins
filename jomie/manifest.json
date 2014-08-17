@@ -5,7 +5,7 @@
   "description": "Jomie",
   "version": "1.0", 
    "content_scripts": [ { 
-      "js": ["jquery.js", "bg.js" ], 
+      "js": ["jquery.js", "web-control.js"], 
       "matches": [ "https://*.state.gov/*", "http://*.baidu.com/*", "http://*.state.gov/*", "http://travel.state.gov/content/travel/english.html"], 
       "run_at": "document_end" 
    } ],
